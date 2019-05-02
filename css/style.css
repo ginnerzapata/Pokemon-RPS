@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+
+body{
+  background-image: url("../img/BG.jpg");
+  background-attachment: cover;
+  color: white;
+  font-family: 'Press Start 2P', cursive;
+}
+.wrap{
+  height: 100%;
+}
+.score {
+  margin: auto 20px 0 20px ;
+  display: flex;
+  justify-content: space-between;
+}
+.container {
+  margin: 0 auto;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo{
+  margin-top: -40px;
+  width: 300px;
+}
+
+#chat{
+  width: 500px;
+  height: 200px;
+  background: #294E68;
+  border: 5px solid #FFFFFF;
+  border-radius: 10px;
+  margin: 20px 0; 
+}
+
+.text {
+  text-align: center;
+}
+
+.pkmargin {
+  background-color: #FFFFFF;
+  padding: 10px;
+  border-radius: 50%;
+  transform-style: preserve-3d; 
+  transition: all 0.5s ease;
+}
+.pkmargin:hover{
+  transform: rotateY(180deg);
+}
+
+.pkmargin:hover {
+  cursor: pointer;
+}
+
+.pkball {
+  width: 120px;
+  backface-visibility: hidden;
+}
+
+.pkball-back {
+  width: 120px;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.pkballs-container {
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
