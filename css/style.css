@@ -13,6 +13,7 @@ body{
   margin: auto 20px 0 20px ;
   display: flex;
   justify-content: space-between;
+  font-size: 12px;
 }
 .container {
   margin: 0 auto;
@@ -33,36 +34,20 @@ body{
   border: 5px solid #FFFFFF;
   border-radius: 10px;
   margin: 20px 0; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .text {
   text-align: center;
 }
 
-.pkmargin {
-  background-color: #FFFFFF;
-  padding: 10px;
-  border-radius: 50%;
-  transform-style: preserve-3d; 
-  transition: all 0.5s ease;
-}
-.pkmargin:hover{
-  transform: rotateY(180deg);
-}
-
-.pkmargin:hover {
-  cursor: pointer;
-}
-
-.pkball {
-  width: 120px;
-  backface-visibility: hidden;
-}
-
-.pkball-back {
-  width: 120px;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
+a,
+a:hover,
+a:active {
+  color: white;
+  text-decoration: none;
 }
 
 .pkballs-container {
@@ -70,4 +55,47 @@ body{
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
+}
+
+.flip-contain {
+  width: 160px;
+  height: 160px;
+  background-color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pokeball {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: all 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.pokeball:hover {
+  transform: rotateY(180deg);
+}
+
+.front-side {
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.back-side {
+  position: absolute;
+  backface-visibility: hidden;
+  transform: rotateY(180deg);
+}
+
+.pkball {
+  height: 140px;
+}
+
+.pkball-back {
+  height: 120px;
 }
